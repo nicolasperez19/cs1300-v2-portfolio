@@ -31,26 +31,6 @@ const AboutMe: React.FC = () => {
             Get in Touch
           </CustomLink>
         </Section>
-        {/* <h2 className="text-4xl font-display font-bold mb-8">About Me</h2>
-        <p className="mb-4">
-          I'm a senior at Brown University studying Computer Science, focusing on software and design.
-        </p>
-        <p className="mb-4">My passion lies with frontend development, web/mobile applications, and UI/UX development.</p>
-        <p className="mb-4">In the past I've built a Congressional award-winning soccer website, a mobile pharmacy app in West Africa.</p>
-        <p className="mb-4">Lately I've been tinkering with AI and machine learning.</p>
-        <p>Outside of coding, you'll catch me:</p>
-        <ul className="list-disc pl-6 mb-4">
-          <li>playing soccer</li>
-          <li>drawing palm trees outside in the park</li>
-          <li>dancing salsa</li>
-        </ul>
-        <p className="mb-8">Why be boring, when you can be fun!</p>
-        <Link
-          to="/projects"
-          className="inline-flex bg-yellow-200 hover:bg-yellow-300 text-primary font-display px-8 py-4 rounded-full border-2 border-black hover:shadow-neo text-lg md:text-xl trext-center"
-        >
-          Get in Touch
-        </Link> */}
       </div>
     </section>
   );
