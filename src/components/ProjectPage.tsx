@@ -6,6 +6,7 @@ import projectsMap from '../projectMap';
 import BuyMeCoffee from './BuyMeCoffee';
 import ProjectArticle from './ProjectArticle';
 import Hero from './Hero';
+import BibTex from './BibTex';
 
 const ProjectPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -60,6 +61,7 @@ const ProjectPage: React.FC = () => {
               </div>
             </div>
           </section>
+          <BibTex title={project.attributes.title} slug={project.attributes.slug} year={2024} />
           <BuyMeCoffee />
           <Contact />
         </>
