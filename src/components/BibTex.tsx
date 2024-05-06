@@ -32,7 +32,7 @@ const BibTex: React.FC<BibTexProps> = ({title, slug, year}) => {
                 </div>
                 <div className="grid grid-cols-1 gap-8">
                     <pre className="bg-secondary text-primary p-6 border-2 border-black rounded-md">
-                        <code className="w-full">{citation}</code>
+                        <code className="w-full text-wrap">{citation}</code>
                     </pre>
                 </div>
             </div>
