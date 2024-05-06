@@ -10,7 +10,7 @@ isAwardWinning: false
 tag: cs1300 responsive redesign  
 ---
 <div class="px-5 md:px-24 2xl:p-32 h-full py-20">
-<Blockquote>A wise man once said, "just because you can, doesn't mean you should". The designers of Arngren clearly didn't follow that advice.</Blockquote>
+<Blockquote>A wise man once said, 'just because you can, doesn't mean you should'. The designers of Arngren clearly didn't follow that advice.</Blockquote>
 </div>
 
 <div class="px-5 md:px-24 2xl:p-32 h-full py-20">
