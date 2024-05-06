@@ -11,7 +11,7 @@ const Blockquote: React.FC<BlockquoteProps> = ({children}) => {
             <article className="bg-secondary text-primary p-6 border-2 border-black rounded-md">
                 <ChatCenteredText size={48} weight="fill" className="mb-4" />
                 <blockquote>
-                    <p className="text-lg mb-4">{children}</p>
+                    <q className="text-lg mb-4">{children}</q>
                 </blockquote>
             </article>
         </div>
