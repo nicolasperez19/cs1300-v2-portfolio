@@ -7,7 +7,7 @@ imagePreview: images/iterative_design/iterative_design_preview.png
 imageDesktop: images/iterative_design/iterative_design_hero_desktop.png
 imageMobile: images/iterative_design/iterative_design_hero_mobile.png
 isAwardWinning: false
-tag: cs1300 development  
+tag: cs1300 iterative design  
 ---
 <div class="px-5 md:px-24 2xl:p-32 h-full py-20">
 <Section title="Background" image="images/iterative_design/iterative_design_original.png" alt="Iterative design conclusion">
