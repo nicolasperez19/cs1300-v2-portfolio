@@ -7,7 +7,7 @@ imagePreview: images/ab_testing/ab_testing_preview.png
 imageDesktop: images/ab_testing/ab_testing_hero_desktop.png
 imageMobile: images/ab_testing/ab_testing_hero_mobile.png
 isAwardWinning: false
-tag: cs1300 responsive redesign  
+tag: cs1300 ab testing  
 ---
 <div class="px-5 md:px-24 2xl:p-32 h-full py-20">
 <Section title="Background" image="images/ab_testing/ab_testing_version_a.png" alt="Original medical appointment website">
