@@ -3,13 +3,13 @@ to: src/projects/<%= h.changeCase.kebab(name) %>.md
 ---
 ---
 title: <%= h.changeCase.title(title) %>
-organization: <%= h.changeCase.kebab(title) %>
-description: <%= description ? description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sapiente dolorum asperiores amet tenetur tempore maiores officia dolorem provident aliquam atque dolore quos modi, blanditiis doloribus qui architecto inventore dolor." %>
+organization: <%= h.changeCase.kebab(organization) %>
+description: <%= description %>
 slug: <%= h.changeCase.kebab(title) %>
-imagePreview: <%= h.changeCase.kebab(title) %>/<%= h.changeCase.kebab(name) %>-preview.webp
-imageDesktop: <%= h.changeCase.kebab(title) %>/<%= h.changeCase.kebab(title) %>-hero-desktop.webp
-imageMobile:  <%= h.changeCase.kebab(title) %>/ <%= h.changeCase.kebab(title) %>-hero-mobile.webp
-isAwardWinning: <%= awardWinning === "yes" ? "true" : "false" %>
+imagePreview: <%= h.changeCase.kebab(name) %>/<%= h.changeCase.kebab(name) %>-preview.webp
+imageDesktop: <%= h.changeCase.kebab(name) %>/<%= h.changeCase.kebab(name) %>-hero-desktop.webp
+imageMobile:  <%= h.changeCase.kebab(name) %>/ <%= h.changeCase.kebab(name) %>-hero-mobile.webp
+isAwardWinning: <%= awardWinning %>
 tag: <%= h.changeCase.lower(tag) %>
 ---
 
