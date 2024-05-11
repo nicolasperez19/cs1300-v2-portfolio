@@ -26,7 +26,7 @@ export default defineConfig({
         Blockquote: "src/components/Blockquote.tsx",
         ImagePreview: "src/components/ImagePreview.tsx",
         CustomLink: "src/components/CustomLink.tsx",
-        // Section: "src/components/Section.tsx",
+        Section: "src/components/Section.tsx",
       },
       // wrapperComponentPath: "src/components/ProjectArticle",
     }),
