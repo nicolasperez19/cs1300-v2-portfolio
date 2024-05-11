@@ -3,7 +3,12 @@ import react from "@vitejs/plugin-react";
 import Markdown from "vite-plugin-react-markdown";
 import path from "path";
 
-// import webfontDownload from "vite-plugin-webfont-dl";
+import webfontDownload from "vite-plugin-webfont-dl";
+
+/* TODO: Add simpler way to resolve path aliases
+@remarks
+@see {@link https://github.com/pingdotgg/uploadthing/blob/main/vitest.config.ts|Resolve path aliases programmatically}
+*/
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,13 +26,13 @@ export default defineConfig({
         Blockquote: "src/components/Blockquote.tsx",
         ImagePreview: "src/components/ImagePreview.tsx",
         CustomLink: "src/components/CustomLink.tsx",
-        Section: "src/components/Section.tsx",
+        // Section: "src/components/Section.tsx",
       },
       // wrapperComponentPath: "src/components/ProjectArticle",
     }),
     react({
       include: [/\.tsx$/, /\.md$/],
     }),
-    // webfontDownload(),
+    webfontDownload(),
   ],
 });
