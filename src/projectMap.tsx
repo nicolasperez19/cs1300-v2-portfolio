@@ -1,8 +1,4 @@
 //@ts-nocheck
-import Test, {
-  attributes as testAttributes,
-} from "@/projects/test.md";
-//@ts-nocheck
 import Arngren, {
   attributes as arngrenAttributes,
 } from "./projects/arngren.md";
@@ -23,6 +19,11 @@ import Cleatwiz, {
   attributes as cleatwizAttributes,
 } from "./projects/cleatwiz.md";
 
+/* TODO: Fix importing markdown so that `@ts-nocheck` is not necessary, allowing for better type inference 
+@remarks
+@see {@link https://github.com/pingdotgg/uploadthing/blob/main/vitest.config.ts|Resolve path aliases programmatically}
+*/
+
 // export interface Project {
 //   title: string;
 //   description: string;
@@ -38,10 +39,6 @@ import Cleatwiz, {
 // }
 
 const projectsMap = [
-{
-    markdown: < Test />,
-    attributes: testAttributes,
-},
   {
     markdown: <Arngren />,
     attributes: arngrenAttributes,
