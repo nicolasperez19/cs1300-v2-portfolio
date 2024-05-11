@@ -24,20 +24,6 @@ import Cleatwiz, {
 @see {@link https://github.com/pingdotgg/uploadthing/blob/main/vitest.config.ts|Resolve path aliases programmatically}
 */
 
-// export interface Project {
-//   title: string;
-//   description: string;
-//   organization: string;
-//   slug: string;
-//   image: string;
-//   // imagePreview: string;
-//   // imageDesktop: string;
-//   // imageMobile: string;
-//   isAwardWinning?: boolean;
-//   tag: string;
-//   // Add more properties as needed
-// }
-
 const projectsMap = [
   {
     markdown: <Arngren />,
@@ -60,6 +46,20 @@ const projectsMap = [
     attributes: cleatwizAttributes,
   },
 ];
+
+// export interface Project {
+//   title: string;
+//   description: string;
+//   organization: string;
+//   slug: string;
+//   image: string;
+//   // imagePreview: string;
+//   // imageDesktop: string;
+//   // imageMobile: string;
+//   isAwardWinning?: boolean;
+//   tag: string;
+//   // Add more properties as needed
+// }
 
 // const projectsData: Project[] = [
 //   {
