@@ -28,7 +28,7 @@ export default defineConfig({
         CustomLink: "src/components/CustomLink.tsx",
         Section: "src/components/Section.tsx",
       },
-      // wrapperComponentPath: "src/components/ProjectArticle",
+      wrapperComponentPath: "src/components/ProjectArticle",
     }),
     react({
       include: [/\.tsx$/, /\.md$/],
