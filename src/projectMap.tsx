@@ -1,14 +1,27 @@
 //@ts-nocheck
-import Arngren, { attributes as arngrenAttributes } from "./projects/arngren.md";
+import Test, {
+  attributes as testAttributes,
+} from "@/projects/test.md";
 //@ts-nocheck
-import AbTesting, { attributes as abTestingAttributes } from "./projects/ab-testing.md";
+import Arngren, {
+  attributes as arngrenAttributes,
+} from "./projects/arngren.md";
 //@ts-nocheck
-import Development, { attributes as developmentAttributes } from "./projects/development.md";
+import AbTesting, {
+  attributes as abTestingAttributes,
+} from "./projects/ab-testing.md";
 //@ts-nocheck
-import IterativeDesign, { attributes as iterativeDesignAttributes } from "./projects/iterative-design.md";
+import Development, {
+  attributes as developmentAttributes,
+} from "./projects/development.md";
 //@ts-nocheck
-import Cleatwiz, { attributes as cleatwizAttributes } from "./projects/cleatwiz.md";
-
+import IterativeDesign, {
+  attributes as iterativeDesignAttributes,
+} from "./projects/iterative-design.md";
+//@ts-nocheck
+import Cleatwiz, {
+  attributes as cleatwizAttributes,
+} from "./projects/cleatwiz.md";
 
 // export interface Project {
 //   title: string;
@@ -20,32 +33,36 @@ import Cleatwiz, { attributes as cleatwizAttributes } from "./projects/cleatwiz.
 //   // imageDesktop: string;
 //   // imageMobile: string;
 //   isAwardWinning?: boolean;
-//   tag: string; 
+//   tag: string;
 //   // Add more properties as needed
 // }
 
 const projectsMap = [
+{
+    markdown: < Test />,
+    attributes: testAttributes,
+},
   {
-    markdown: <Arngren/>,
-    attributes: arngrenAttributes
+    markdown: <Arngren />,
+    attributes: arngrenAttributes,
   },
   {
-    markdown: <AbTesting/>,
-    attributes: abTestingAttributes
+    markdown: <AbTesting />,
+    attributes: abTestingAttributes,
   },
   {
-    markdown: <Development/>,
-    attributes: developmentAttributes
+    markdown: <Development />,
+    attributes: developmentAttributes,
   },
   {
-    markdown: <IterativeDesign/>,
-    attributes: iterativeDesignAttributes
+    markdown: <IterativeDesign />,
+    attributes: iterativeDesignAttributes,
   },
   {
-    markdown: <Cleatwiz/>,
-    attributes: cleatwizAttributes
-  }
-]
+    markdown: <Cleatwiz />,
+    attributes: cleatwizAttributes,
+  },
+];
 
 // const projectsData: Project[] = [
 //   {
@@ -83,5 +100,5 @@ const projectsMap = [
 //   },
 //   // Add more project objects as needed
 // ];
-  
+
 export default projectsMap;
