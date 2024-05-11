@@ -1,6 +1,8 @@
-import { Trophy } from '@phosphor-icons/react';
-import React from 'react';
-import CustomLink from './CustomLink';
+import { Trophy } from "@phosphor-icons/react";
+import React from "react";
+import CustomLink from "./CustomLink";
+
+import { getImageUrl } from "@/utils/utils";
 
 interface ProjectCardProps {
   title: string;
@@ -12,28 +14,44 @@ interface ProjectCardProps {
   tag: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, organization, description, slug, image, isAwardWinning=false, tag }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  organization,
+  description,
+  slug,
+  image,
+  isAwardWinning = false,
+  tag,
+}) => {
   return (
-    <CustomLink to={`/cs1300-v2-portfolio/projects/${slug}`} className="block bg-white border-2 border-black rounded-md hover:shadow-neo">
-      <article className="w-full h-full">
-        <div className='relative'>
-          <figure className='w-full h-1/3 border-black border-b-2'>
-            <img src={`/cs1300-v2-portfolio/assets/${image}`} alt={title} className="w-full h-full aspect-video object-cover" />
-          </figure>
+    <CustomLink
+      to={`/projects/${slug}`}
+      className="block rounded-md border-2 border-black bg-white hover:shadow-neo"
+    >
+      <article className="h-full w-full">
+        <div className="relative aspect-video">
+          <img
+            src={getImageUrl(image)}
+            alt={title}
+            className="h-full w-full border-b-2 border-black object-cover"
+          />
           {isAwardWinning && (
-            <div className="absolute top-2 left-2 border-2 border-black bg-yellow-200 text-primary rounded-full p-2">
+            <div className="absolute left-2 top-2 rounded-full border-2 border-black bg-yellow-200 p-2 text-primary">
               <Trophy size={24} weight="fill" />
             </div>
           )}
         </div>
-      <div className="p-4 w-full h-full">
-        <span className="inline-block bg-yellow-200 border-2 border-black text-xs font-display px-2 py-1 rounded-full mb-6">{tag}</span>
-        <p className='text-xs uppercase mb-2'>{organization}</p>
-        <h3 className="text-xl font-display font-bold mb-2">{title}</h3>
-        <p className='mb-4'>{description}</p>
+        <div className="h-full w-full p-4">
+          {/* TODO: Make ProjectCard component support multiple tags */}
+          <span className="mb-6 inline-block rounded-full border-2 border-black bg-yellow-200 px-2 py-1 font-display text-xs">
+            {tag}
+          </span>
+          <p className="mb-2 text-xs uppercase">{organization}</p>
+          <h3 className="mb-2 font-display text-xl font-bold">{title}</h3>
+          <p className="mb-4">{description}</p>
 
-        <strong>Read More</strong>
-      </div>
+          <strong>Read More</strong>
+        </div>
       </article>
     </CustomLink>
   );
