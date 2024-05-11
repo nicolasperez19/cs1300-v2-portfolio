@@ -5,6 +5,7 @@ interface ProjectArticleProps {
 }
 
 const ProjectArticle: React.FC<ProjectArticleProps> = ({children}) => {
+    // return (<div className="prose">{children}</div>);
     return (<>{children}</>);
 }
 
