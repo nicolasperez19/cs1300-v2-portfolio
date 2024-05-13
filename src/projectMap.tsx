@@ -41,10 +41,10 @@ const projectsMap = [
     markdown: <IterativeDesign />,
     attributes: iterativeDesignAttributes,
   },
-  {
-    markdown: <Cleatwiz />,
-    attributes: cleatwizAttributes,
-  },
+  // {
+  //   markdown: <Cleatwiz />,
+  //   attributes: cleatwizAttributes,
+  // },
 ];
 
 // export interface Project {
