@@ -1,7 +1,7 @@
 ---
 title: Innovating on A.I Documentation
 organization: DriverAI
-description: I boldly ventured into the uncharted territory of AI-generated documentation, leveraging the power of iterative feedback to create a groundbreaking system that not only writes itself but also cracks jokes and brews coffee. The result? Documentation that's as entertaining as it is informative, making even the most tedious software feel like a party.
+description: I boldly ventured into the uncharted territory of AI-generated documentation, leveraging the power of iterative feedback to create a groundbreaking system.
 slug: innovating-on-ai-documentation
 imagePreview: iterative_design/iterative_design_preview.webp
 imageDesktop: iterative_design/iterative_design_hero_desktop.png
